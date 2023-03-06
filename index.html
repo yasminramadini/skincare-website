@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Innisfree - Skincare Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.css">
+  </head>
+  <body>
+    <!-- header -->
+    <header class="pt-4">
+      <!-- navbar -->
+      <nav class="container flex justify-between items-center">
+        <img src="assets/logo.png" alt="logo" class="logo" />
+        <ul class="flex gap-8 flex-col md:flex-row p-5 md:p-0 w-1/2 md:w-auto" id="navbar-links">
+          <li>
+            <a href="#" class="active">Home</a>
+          </li>
+          <li>
+            <a href="#">Products</a>
+          </li>
+          <li>
+            <a href="#">About us</a>
+          </li>
+          <li>
+            <a href="#">Contact us</a>
+          </li>
+        </ul>
+        <ul class="flex gap-4 lg:gap-8" id="navbar-action">
+          <img src="assets/align-justify.png" alt="" onclick="toggleNavbar()" class="block md:hidden" />
+          <li>
+            <img src="assets/shopping-cart.png" alt="" />
+          </li>
+          <li>
+            <img src="assets/search.png" alt="" />
+          </li>
+        </ul>
+      </nav>
+      <!-- end navbar -->
+      <div class="container">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-20 md:mt-32 text-white pb-32"
+        >
+          <div>
+            <h1 class="text-white text-3xl md:text-4xl">
+              Nutrition From Nature To Solve Your Skin Problem
+            </h1>
+            <p class="mt-16 mb-12">
+              Over 5000 Indonesian people have proven that Inisfree can help
+              them overcome their skin problems without side effects. Now, it’s
+              your turn to try it!
+            </p>
+            <a href="#" class="btn-white">Explore Our Products</a>
+          </div>
+          <div>
+            <img src="assets/hero.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+    
+    <!-- value 1 -->
+    <section class="container my-32">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+        <img src="assets/value1.png">
+        <div>
+          <h3 class="text-2xl md:text-3xl mb-8">Unlock The Power Of Nature For Your Skin</h3>
+          <p>As more and more people become aware of the potential harm of synthetic chemicals in conventional skincare products. Natural skincare has become a popular alternative. Using ingredients derived from nature, Innisfree offers a gentle and an effective approach to achieving healthy, glowing skin.</p>
+        </div>
+      </div>
+    </section>
+    <!-- end value 1 -->
+    
+    <!-- value 2 -->
+    <section class="container my-32">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="order-last md:order-first">
+          <h3 class="text-2xl md:text-3xl mb-8">Various Superior Variants According To Your Need</h3>
+          <p>Our products are free from harmful chemicals and synthetic fragrances, making them safe for all skin types, including sensitive skin. Instead, we use natural ingredients such as aloe vera, chamomile, lavendar, and olive oil to provide your skin with the nutrients it needs to look and feel its best.</p>
+        </div>
+        <img src="assets/value2.png" class="order-first md:order-last">
+      </div>
+    </section>
+    <!-- end value 2 -->
+    
+    <!-- products -->
+    <section class="container my-32">
+      <h3 class="text-2xl md:text-3xl text-center">Our Featured Products</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-16">
+        <div class="text-center">
+          <img src="assets/p1.png">
+          <h5 class="text-lg font-medium mt-8 mb-4">Hydrating Facial Cleanser</h5>
+          <p>Infused with natural ingredients like chamomile and aloe vera</p>
+          <div class="flex justify-between items-center mt-8">
+            <h5 class="font-bold">Rp 80.000</h5>
+            <button class="btn-primary">Add to cart</button>
+          </div>
+        </div>
+        <div class="text-center">
+          <img src="assets/p2.png">
+          <h5 class="text-lg font-medium mt-8 mb-4">Soothing Toner</h5>
+          <p>Infused with natural ingredients like chamomile and aloe vera</p>
+          <div class="flex justify-between items-center mt-8">
+            <h5 class="text-xl font-bold">Rp 70.000</h5>
+            <button class="btn-primary">Add to cart</button>
+          </div>
+        </div>
+        <div class="text-center">
+          <img src="assets/p3.png">
+          <h5 class="text-lg font-medium mt-8 mb-4">Brightening Serum</h5>
+          <p>Infused with natural ingredients like chamomile and aloe vera</p>
+          <div class="flex justify-between items-center mt-8">
+            <h5 class="text-xl font-bold">Rp 70.000</h5>
+            <button class="btn-primary">Add to cart</button>
+          </div>
+        </div>
+        <div class="text-center">
+          <img src="assets/p4.png">
+          <h5 class="text-lg font-medium mt-8 mb-4">Moisturizing Lip Balm</h5>
+          <p>Infused with natural ingredients like chamomile and aloe vera</p>
+          <div class="flex justify-between items-center mt-8">
+            <h5 class="text-xl font-bold">Rp 70.000</h5>
+            <button class="btn-primary">Add to cart</button>
+          </div>
+        </div>
+        <div class="text-center">
+          <img src="assets/p5.png">
+          <h5 class="text-lg font-medium mt-8 mb-4">Soothing Body Lotion</h5>
+          <p>Infused with natural ingredients like chamomile and aloe vera</p>
+          <div class="flex justify-between items-center mt-8">
+            <h5 class="text-xl font-bold">Rp 70.000</h5>
+            <button class="btn-primary">Add to cart</button>
+          </div>
+        </div>
+        <div class="text-center">
+          <img src="assets/p6.png">
+          <h5 class="text-lg font-medium mt-8 mb-4">Brightening Serum</h5>
+          <p>Infused with natural ingredients like chamomile and aloe vera</p>
+          <div class="flex justify-between items-center mt-8">
+            <h5 class="text-xl font-bold">Rp 70.000</h5>
+            <button class="btn-primary">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end products -->
+    
+    <!-- testimonial -->
+    <section class="container my-32 rounded-md">
+      <div class="testimonial p-8">
+        <h3 class="text-white text-center text-2xl md:text-3xl mb-16">What They Say?</h3>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="bg-white p-5 rounded-lg">
+              <p>Since using Innisfree, my skin which used to be dull now looks more radiant. Apart from that it also moisturizes my dry skin. Skin problems are resolved one by one compared to using other products that use chemicals.</p>
+              <div class="flex gap-3 items-center mt-8">
+                <img src="assets/profile.jpeg" class="rounded-full w-12 h-12">
+                <div>
+                  <h5 class="text-md font-medium">Ashley Graham</h5>
+                  <p class="text-sm">University Student</p>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-white p-5 rounded-lg">
+              <p>Since using Innisfree, my skin which used to be dull now looks more radiant. Apart from that it also moisturizes my dry skin. Skin problems are resolved one by one compared to using other products that use chemicals.</p>
+              <div class="flex gap-3 items-center mt-8">
+                <img src="assets/profile.jpeg" class="rounded-full w-12 h-12">
+                <div>
+                  <h5 class="text-md font-medium">Ashley Graham</h5>
+                  <p class="text-sm">University Student</p>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-white p-5 rounded-lg">
+              <p>Since using Innisfree, my skin which used to be dull now looks more radiant. Apart from that it also moisturizes my dry skin. Skin problems are resolved one by one compared to using other products that use chemicals.</p>
+              <div class="flex gap-3 items-center mt-8">
+                <img src="assets/profile.jpeg" class="rounded-full w-12 h-12">
+                <div>
+                  <h5 class="text-md font-medium">Ashley Graham</h5>
+                  <p class="text-sm">University Student</p>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- end testimonial -->
+    
+    <!-- faq -->
+    <section class="container my-32">
+      <h3 class="text-2xl md:text-3xl text-center mb-4">Frequently Asked Questions</h3>
+      <p class="text-center">Are you wondering about Inisfree? We have covered most asked questions below here</p>
+    <div class="accordion-container">
+      <div class="ac">
+        <h2 class="ac-header">
+          <button type="button" class="ac-trigger">Is it for man or woman?</button>
+        </h2>
+        <div class="ac-panel">
+          <p class="ac-text">Inisfree is suitable for man or woman, also for all skin types.</p>
+        </div>
+      </div>
+      <div class="ac">
+        <h2 class="ac-header">
+          <button type="button" class="ac-trigger">Is it 100% natural?</button>
+        </h2>
+        <div class="ac-panel">
+          <p class="ac-text">Inisfree is suitable for man or woman, also for all skin types.</p>
+        </div>
+      </div>
+      <div class="ac">
+        <h2 class="ac-header">
+          <button type="button" class="ac-trigger">Can kids use this?</button>
+        </h2>
+        <div class="ac-panel">
+          <p class="ac-text">Inisfree is suitable for man or woman, also for all skin types.</p>
+        </div>
+      </div>
+      <div class="ac">
+        <h2 class="ac-header">
+          <button type="button" class="ac-trigger">How to order?</button>
+        </h2>
+        <div class="ac-panel">
+          <p class="ac-text">Inisfree is suitable for man or woman, also for all skin types.</p>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- end faq -->
+    
+    <footer class="p-5">
+      <p class="text-white text-center">Innfinisfree | 2023 All Rights Reserved</p>
+    </footer>
+    
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/accordion-js@3.3.2/dist/accordion.min.js"></script>
+    <script>
+      const navbar = document.querySelector("#navbar-links")
+      
+      function toggleNavbar() {
+        navbar.classList.toggle("active")
+      }
+      
+      const swiper = new Swiper('.swiper', {
+        speed: 400,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination"
+        },
+        autoHeight: true,
+        breakpoints: {
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 30
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30
+          }
+        }
+      });
+      
+      new Accordion('.accordion-container');
+    </script>
+  </body>
+</html>

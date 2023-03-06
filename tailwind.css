@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --green: #3d911d;
+  --dark-green: #317617;
+  --white: #fff;
+  --gray: #d0d0d0;
+  --body: #3d3d3d;
+  --bg: #ECF4DC;
+}
+
+@layer components {
+  .btn-white {
+    background: var(--white);
+    color: var(--green);
+    @apply px-6 py-3 md:px-8 md:py-4 rounded-full font-medium hover:ring-4 hover:ring-white/50;
+  }
+  
+  .btn-primary {
+    background: var(--green);
+    color: var(--white);
+    @apply px-6 py-3 md:px-8 md:py-4 rounded-full font-medium hover:bg-green-800;
+  }
+
+  .logo {
+    @apply w-36 md:w-40 lg:w-56;
+  }
+  
+  .navbar-links {
+    @apply fixed md:static 
+  }
+  
+  #navbar-action img {
+    @apply w-5 md:w-7;
+  }
+}
+
+html {
+  font-size: 16px;
+}
+
+h1,
+h3
+{
+  font-family: "Merriweather", sans-serif;
+  color: var(--green);
+}
+
+h5 {
+  color: var(--green);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--body);
+  background: var(--bg);
+}
+
+header {
+  background: linear-gradient(to bottom right, var(--green), var(--dark-green));
+}
+
+#navbar-links a.active {
+  color: var(--white);
+  font-weight: 500;
+}
+
+#navbar-links a {
+  color: var(--gray);
+}
+
+.testimonial {
+  background: var(--green);
+}
+
+.swiper {
+  width: 100%;
+}
+
+.ac-header button {
+  font-family: "Poppins", Sans-Serif !important;
+  color: var(--white) !important;
+  background: var(--green) !important;
+}
+
+.ac-panel {
+  background: var(--bg) !important;
+}
+
+footer {
+  background: var(--green);
+}
+
+@media screen and (max-width: 640px) {
+  #navbar-links {
+    position: fixed;
+    top: 0;
+    left: -800px;
+    height: 100vh;
+    background: #fff;
+    transition: all 0.4s;
+  }
+  
+  #navbar-links.active {
+    left: 0;
+  }
+  
+  #navbar-links a.active {
+    color: var(--green);
+  }
+  
+  #navbar-links a {
+    color: var(--body);
+  }
+}
